@@ -227,6 +227,7 @@ p {
     
     body {
         background: url('./images/bg-mobile.svg') var(--violet) no-repeat;
+        background-size: contain;
     }
     
     main {
