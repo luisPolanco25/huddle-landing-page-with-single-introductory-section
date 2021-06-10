@@ -122,3 +122,99 @@ p {
     border: 1px solid var(--magenta);
     color: var(--magenta);
 }
+
+@media (max-width: 1285px) {
+
+    main {
+        width: 900px;
+    }
+    
+    #huddle {
+        top: -1rem;
+    }
+
+    #huddle img {
+        width: 70%;
+    }
+    
+    #mockups img {
+        width: 450px;
+    }
+
+    #logo-area {
+        flex-basis: 20%;
+    }
+
+    #introduction-area {
+        flex-basis: 80%;
+        margin-top: 8rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 0.88rem;
+    }
+
+    #register {
+        font-size: 1rem;
+        padding: 0.8rem;
+        width: 150px;
+        margin-bottom: 7rem;
+    }
+
+    #social-media button {
+        font-size: 1rem;
+        padding: 0.55rem;
+        width: 38px;
+    }
+}
+
+@media (max-width: 905px) {
+
+    main {
+        width: 620px;
+    }
+
+    #huddle {
+        top: -3rem;
+    }
+    
+    #mockups img {
+        width: 325px;
+    }
+
+    #logo-area {
+        margin-right: 1.5rem;
+    }
+
+    #introduction-area {
+        margin-top: 7rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    #register {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+        width: 120px;
+        margin-bottom: 6rem;
+    }
+
+    #social-media {
+        margin-right: 1.5rem;
+    }
+
+    #social-media button {
+        font-size: 0.9rem;
+        width: 35px;
+    }
+}
