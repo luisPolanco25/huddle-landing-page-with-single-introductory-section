@@ -174,6 +174,10 @@ p {
 
 @media (max-width: 905px) {
 
+    body {
+        background-position: unset;
+    }
+    
     main {
         width: 620px;
     }
@@ -217,4 +221,77 @@ p {
         font-size: 0.9rem;
         width: 35px;
     }
+}
+
+@media (max-width: 625px) {
+    
+    body {
+        background: url('./images/bg-mobile.svg') var(--violet) no-repeat;
+    }
+    
+    main {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        position: static;
+        transform: translate(0%, 0%)
+    }
+
+    #logo-area {
+        margin-right: 0; 
+    }
+
+    #mockups {
+        display: flex;
+        justify-content: center;
+    }
+
+    #huddle {
+        position: static;
+        margin-bottom: 3.4rem;
+        margin-top: 1.8rem;
+    }
+
+    #huddle img {
+        width: 125px;
+        margin-left: 1rem;
+    }
+    
+    #mockups img {
+        width: 82%;
+    }
+
+    #introduction-area {
+        margin-bottom: 0;
+        margin-top: 3rem;
+        align-items: center;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 1.75rem;
+    }
+    
+    p {
+        text-align: center;
+        font-size: 1.1rem;
+        width: 90%;
+    }
+
+    #register {
+        margin-bottom: 4rem;
+        width: 60%;
+    }
+
+    #social-media {
+        align-self: center;
+        margin-right: 0;
+    }
+
+    #social-media button {
+        font-size: 0.8rem;
+        width: 33px;
+        padding: 0.5rem;
+    }
+
 }
