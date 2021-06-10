@@ -1,6 +1,8 @@
 :root {
     --violet: hsl(257, 40%, 49%);
     --magenta: hsl(300, 69%, 71%);
+    --poppins: 'Poppins', sans-serif;
+    --open: 'Open Sans', sans-serif; 
 }
 
 * {
@@ -11,11 +13,112 @@
 
 html {
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;;
+    font-family: var(--poppins);
+    color: white;
 }
 
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: var(--violet);
+    background: url('./images/bg-desktop.svg') var(--violet) no-repeat;
+    background-size: cover;
+    background-position: -90px;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1275px;
+}
+
+#logo-area {
+    flex-basis: 40%;
+    margin-right: 3rem;
+}
+
+#huddle {
+    position: absolute;
+    top: -7rem;
+}
+
+#huddle img {
+    width: 82%;
+}
+
+#introduction-area {
+    align-self: flex-start;
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4.2rem;
+}
+
+h1 {
+    font-size: 2.6rem;
+    align-self: stretch;
+    font-weight: 600;
+}
+
+p {
+    font-family: var(--open);
+    font-weight: 400;
+    font-size: 1.13rem;
+    line-height: 1.5;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+
+#register {
+    font-family: var(--poppins);
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--violet);
+    background: white;
+    box-shadow: 1px 2px 10px #333;
+    padding: 0.9rem;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-radius: 38px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    margin-bottom: 10rem;
+}
+
+#register:hover {
+    color: white;
+    background-color: var(--magenta);
+}
+
+#social-media {
+    align-self: flex-end;
+}
+
+#social-media button {
+    background: transparent;
+    color: white;
+    font-size: 1.15rem;
+    border: 1px solid white;
+    padding: 0.6rem;
+    border-radius: 50%;
+    width: 43px;
+    margin-right: 0.7rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+#social-media button:last-child {
+    margin-right: 0;
+}
+
+#social-media button:hover {
+    border: 1px solid var(--magenta);
+    color: var(--magenta);
 }
